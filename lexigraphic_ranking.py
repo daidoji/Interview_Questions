@@ -40,7 +40,6 @@ def rank_str( user_input ):
 		(rnk, rnk_divisor) = tuple(ranks.pop())
 
 		fact_cache = fact_cache * j
-		print " %d + ( %d * ( %d * %d ) ) / %d " % (tot_sum, rnk, fact_cache, j, rnk_divisor)
 		tot_sum = tot_sum + ( rnk * ( fact_cache ) ) / rnk_divisor
 		
 		j = j + 1 
